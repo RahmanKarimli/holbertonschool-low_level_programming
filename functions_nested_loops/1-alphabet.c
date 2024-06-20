@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * main -  prints _putchar, followed by a new line
- * Return: Always 0 (Success)
+ * print_alphabet - Entry point
+ * Return:0
  */
 
-void print_alphabet(void)
-{
-	int i;
-	for (i = 97; i < 123; i++)
-	{
-		_putchar(i);
+void print_alphabet(void) {
+	char ch = 'a';
+
+	while (ch<='z') {
+		_putchar(ch);
+		ch++;
 	}
 	_putchar('\n');
 }
