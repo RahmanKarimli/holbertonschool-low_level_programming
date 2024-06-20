@@ -2,6 +2,7 @@
 
 /**
  * _isalpha - Entry point
+ * @c: the character
  * Return:0
  */
 

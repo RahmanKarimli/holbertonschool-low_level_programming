@@ -2,6 +2,7 @@
 
 /**
  * _islower - Entry point
+ * @c: the character
  * Return:0
  */
 
