@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_times_table - Entry point
  * @n: integer
@@ -6,7 +7,7 @@
  */
 void print_times_table(int n)
 {
-	int i, j, tmp;
+	int i, j, tmp, rmn;
 
 	if (n > 15 || n < 0)
 		return;
@@ -37,8 +38,7 @@ void print_times_table(int n)
 			else
 			{
 				putchar((tmp / 100) + '0');
-				int rmn = tmp % 100;
-
+				rmn = tmp % 100;
 				putchar((rmn / 10) + '0');
 				putchar((rmn % 10) + '0');
 			}
