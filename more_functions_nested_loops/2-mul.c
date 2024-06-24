@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _abs - Entry point
+ * mul - Entry point
  * @a: integer
  * @b: integer
  * Return:0
