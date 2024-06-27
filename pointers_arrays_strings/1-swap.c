@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * swap_int - Entry point
@@ -6,9 +5,10 @@
  * @b: integer
  * Return:0
  */
+
 void swap_int(int *a, int *b)
 {
-        int c;
+	int c;
 
 	c = *a;
 	*a = *b;
