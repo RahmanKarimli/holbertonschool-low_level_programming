@@ -20,6 +20,10 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	for (i = 0; i <= n - 1; i++)
 	{
+		if (lens < 1)
+		{
+			break;
+		}
 		*(dest + lend) = *(src + i);
 		lend++;
 	}
