@@ -8,7 +8,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, lens;
+	int i, j, lens;
 
 	for (lens = 0; src[lens] != '\0'; lens++)
 	{
