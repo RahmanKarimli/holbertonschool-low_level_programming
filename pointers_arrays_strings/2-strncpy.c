@@ -15,11 +15,11 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	for (i = 0; i < n; i++)
 	{
-		if (lens < 1)
-		{
-			break;
-		}
 	dest[i] = src[i];
+	}
+	for (j = lens; j < n; j++)
+	{
+	dest[j] = '\0';
 	}
 	return (dest);
 }
