@@ -12,10 +12,10 @@ char *_strpbrk(char *s, char *accept)
 	int len;
 	int ln;
 
-	for (len = 0; s[i] != '\0'; len++)
+	for (len = 0; s[len] != '\0'; len++)
 	{
 	}
-	for (ln = 0; s[j] != '\0'; ln++)
+	for (ln = 0; s[ln] != '\0'; ln++)
 	{
 	}
 	for (i = 0; i <= len; i++)
