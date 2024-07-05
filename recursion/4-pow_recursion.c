@@ -2,7 +2,7 @@
 /**
  * _pow_recursion - Entry point
  * @x: integer
- * @y; integer
+ * @y: integer
  * Return:0
  */
 int _pow_recursion(int x, int y)
