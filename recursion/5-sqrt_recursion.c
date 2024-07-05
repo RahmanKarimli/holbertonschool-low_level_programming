@@ -1,10 +1,8 @@
 #include "main.h"
 /**
  * find_root - calculates i**i to check with n.
- * _sqrt_recursion - entry point.
  * @n: base number.
  * @i: iterator number.
- * @n: integer
  * Return: i.
  */
 int root(int n, int i)
@@ -22,6 +20,12 @@ int root(int n, int i)
 		return (-1);
 	}
 }
+/**
+ * _sqrt_recursion - calculates the natural square root of n.
+ * @n: base number.
+ *
+ * Return: the square root of n.
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
