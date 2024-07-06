@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * find_root - calculates i**i to check with n.
+ * root - calculates i**i to check with n.
  * @n: base number.
  * @i: iterator number.
  * Return: i.
