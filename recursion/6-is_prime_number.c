@@ -5,7 +5,7 @@
  * @i: iterator number.
  * Return: i.
  */
-int multiple (int n, int i)
+int multiple(int n, int i)
 {
 	if (n == i)
 	{
@@ -25,7 +25,7 @@ int multiple (int n, int i)
  * @n: base number.
  * Return: i.
  */
-int is_prime_number (int n)
+int is_prime_number(int n)
 {
 	if (n < 2)
 	{
