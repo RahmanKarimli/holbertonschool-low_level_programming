@@ -23,7 +23,6 @@ int root(int n, int i)
 /**
  * _sqrt_recursion - calculates the natural square root of n.
  * @n: base number.
- *
  * Return: the square root of n.
  */
 int _sqrt_recursion(int n)
