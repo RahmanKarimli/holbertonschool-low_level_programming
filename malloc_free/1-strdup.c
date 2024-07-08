@@ -1,3 +1,10 @@
+#include <stdlib.h>
+#include "main.h"
+/**
+ * _strdup - entry point.
+ * @str: string
+ * Return: i.
+ */
 char *_strdup(char *str)
 {
 	char *array;
