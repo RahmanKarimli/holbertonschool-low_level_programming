@@ -1,4 +1,4 @@
-include <stdlib.h>
+#include <stdlib.h>
 #include "main.h"
 #include <stddef.h>
 /**
@@ -11,7 +11,7 @@ include <stdlib.h>
 void free_grid(int **grid, int height)
 {
 	int h;
-	
+
 	if (grid == NULL || height ==0)
 		return;
 
