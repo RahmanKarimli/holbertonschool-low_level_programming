@@ -1,6 +1,6 @@
 include <stdlib.h>
 #include "main.h"
-
+#include <stddef.h>
 /**
  * free_grid - frees array
  * @height: width of the matrix
