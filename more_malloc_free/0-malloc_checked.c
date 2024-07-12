@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * malloc_checked - entry point.
@@ -11,7 +12,7 @@ void *malloc_checked(unsigned int b)
 	array = malloc(b);
 	if (array == NULL)
 	{
-		return (98);
+		exit(98);
 	}
 	return (array);
 }
