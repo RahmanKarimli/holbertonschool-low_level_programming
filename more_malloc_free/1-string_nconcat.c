@@ -12,16 +12,52 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *array;
 	unsigned int len, i, j;
 
-	for (len = 0; s2[len] != '\0'; len++)
+	len1 = 0;
+	len = 0;
+	if (s1 == NULL && s2 != NULL)
+	{
+		for (len = 0; s2[len] != '\0'; len++)
 
-	array = malloc(sizeof(s1) + sizeof(s2) * n);
+	}
+	else if (s2 == NULL && s1 != NULL)
+	{
+		for (len1 = 0; s1[len1] != '\0'; len1++)
+
+	}
+	if (n >= len)
+	{
+		array = malloc(len1 + len + 1);
+	}
+	else
+	{
+		array = malloc(len1 + n + 1);
+	}
 	if (array == NULL)
 	{
 		return (NULL);
 	}
-	for (j = 0; s1[j] != '\0'; j++)
+	if (s1 == NULL && s2 == NULL)
 	{
-		array[j] = s1[j];
+		array[0] = '\0';
+		return (array);
+	}
+	if (s1 == NULL && s2 != NULL)
+	{
+		for (j = 0; s1[j] != '\0'; j++)
+		{
+			array[j] = s1[j];
+		}
+		array[j] = '\0';
+		return (array);
+	}
+	else if (s2 == NULL && s1 != NULL)
+	{
+		for (j = 0; s1[j] != '\0'; j++)
+		{
+			array[j] = s1[j];
+		}
+		array[j] = '\0';
+		return (array);
 	}
 	if (len <= n)
 	{
@@ -32,7 +68,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		return (array);
 	}
-	for (i = 0; i < n; i++)
+	for (j = 0; s1[j] != '\0'; j++)
+	{
+		array[j] = s1[j];
+	}
+	for (i = 0; i < n && s2[i] != '\0'; i++)
 	{
 		array[j] = s2[i];
 		j++;
