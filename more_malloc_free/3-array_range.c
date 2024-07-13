@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * array_range - entry point.
- * @min.c: integer
+ * @min: integer
  * @max: integer
  * Return: array.
  */
