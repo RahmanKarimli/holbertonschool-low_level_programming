@@ -16,12 +16,13 @@ int (*get_op_func(char *s))(int, int)
 	{"/", op_div},
 	{"%", op_mod}
 	};
-	for (i = 0; i < 5; i++)
+	i = 0;
+	while (i < 5)
 	{
-		if (strcmp(s, myop[i].op) == 0)
-		{
-			return (myop[i].f);
-		}
+		if (strcmp(s, ops[i].op) == 0)
+			return (ops[i].f);
+		i++;
 	}
+
 	return (0);
 }
