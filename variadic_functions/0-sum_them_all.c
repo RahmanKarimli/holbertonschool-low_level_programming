@@ -9,8 +9,8 @@ int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int num, i, sum;
 	va_list arr;
-	va_start(arr, n);
 
+	va_start(arr, n);
 	if (n == 0)
 	{
 		return (0);
