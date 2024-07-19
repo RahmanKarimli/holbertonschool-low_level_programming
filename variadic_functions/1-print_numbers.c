@@ -4,7 +4,7 @@
 /**
   * print_numbers - ...
   * @n: count
-  * @seperator: seperator
+  * @separator: seperator
   * Return: void
   */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -21,7 +21,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(arr, n);
 	num = va_arg(arr, int);
 	printf("%d", num);
-	for(i = 0; i < n-1; i++)
+	for (i = 0; i < n - 1; i++)
 	{
 		num = va_arg(arr, int);
 		if (separator == NULL)
