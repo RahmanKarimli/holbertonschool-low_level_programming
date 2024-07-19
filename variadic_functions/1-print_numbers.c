@@ -13,6 +13,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	int num;
 
+	if (n == 0)
+	{
+		exit(0);
+	}
 	va_start(arr, n);
 	num = va_arg(arr, int);
 	printf("%d", num);
