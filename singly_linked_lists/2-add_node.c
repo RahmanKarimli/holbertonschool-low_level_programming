@@ -8,6 +8,8 @@
 /**
  * list_len - ...
  * @h: pointer to the list_t list to print
+ * @head: list_t
+ * @str: char
  *
  * Return: the number of nodes printed
  */
