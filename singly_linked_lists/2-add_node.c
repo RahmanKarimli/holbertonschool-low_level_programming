@@ -6,8 +6,7 @@
 #include <unistd.h>
 #include "lists.h"
 /**
- * list_len - ...
- * @h: pointer to the list_t list to print
+ * add_node - ...
  * @head: list_t
  * @str: char
  *
