@@ -11,15 +11,24 @@
  *
  * Return: the number of nodes printed
  */
-size_t list_len(const list_t *h)
+list_t *add_node(list_t **head, const char *str)
 {
 	int len;
+	list_t *new;
 
 	len = 0;
-	while (h)
+	while (str[len] != 0)
 	{
 		len++;
-		h = h->next;
 	}
-	return (len);
+	new  = malloc(sizeof(size_t));
+	if (new == NULL)
+	{
+		return (NULL);
+	}
+	new->str = strdup(str);
+	new->len = len;
+	new->next = *head;
+	(*head) = new;
+	return (*head);
 }
