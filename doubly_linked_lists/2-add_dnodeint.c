@@ -14,19 +14,21 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *new;
+	dlistint_t *frontnode = (dlistint_t *) malloc(sizeof(dlistint_t));
 
-	new = malloc(sizeof(dlistint_t));
-	if (!new)
+	if (frontnode == NULL)
 	{
 		return (NULL);
 	}
-	new->n = n;
-	new->next = (*head);
-	if ((*head) != NULL)
+	frontnode->n = n;
+	frontnode->prev = NULL;
+	frontnode->next = *head;
+
+	if (*head != NULL)
 	{
-		(*head)->prev = new;
+		(*head)->prev = frontnode;
 	}
-	(*head) = new;
-	return (new);
+	*head = frontnode;
+
+	return (frontnode);
 }
