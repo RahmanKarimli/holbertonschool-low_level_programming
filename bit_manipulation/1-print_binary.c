@@ -19,7 +19,7 @@ void print_binary(unsigned long int n)
 		}
 		if (flag || (n==0 && i == 0))
 		{
-			printf("%d", current);
+			putchar(current + '0');
 		}
 	}
 }
