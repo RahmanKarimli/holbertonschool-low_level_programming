@@ -7,9 +7,10 @@
  */
 void print_binary(unsigned long int n)
 {
-	int current, i, flag = 0;
+	int current, i, size, flag = 0;
 	unsigned long int result = 0;
-	for (i = 31; i >= 0; i--)
+	size = sizeof(n) * 8 - 1;
+	for (i = size; i >= 0; i--)
 	{
 		result = n >> i;
 		current = result & 1;
